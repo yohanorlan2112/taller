@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+       
+        body{
+            background-color: antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">BIENVENIDO A ESTILO DE CSS</h1>
+    <h2 id="site_text"class="subtitles" name="subtitles">tamaños de texto</h2>
+    <h2 id="site_media"class="subtitles" name="subtitles">redes sociales</h2>
+    <h2 id="site_images"class="subtitles" name="subtitles">imagenes</h2>
+    <label for="sex">sexo:</label><br>
+    <label for="sex_mas">mas:</label><br><input type="radio" id="sex_mas" class="input_radio_sex" name="sex_group"><br>
+    <label for="sex_fem">fem:</label><br><input type="radio" id="sex_fem" class="imput_radio-sex" name="sex_group"><br>
+    <input type="text"disabled>
+    <input type="text"disabled>
+    <input type="text" autofocus><br>
+    <button id="btn_send">Enviar</button>
+
+    <h2>selector desendente</h2>
+    <div id="papa">
+        <div class="hermanos">
+            <span id="nh_uno" class="nieto hijo">span uno</span>
+            <span id="nh_dos" class="nieto hijo">span dos</span>
+        </div>
+        <div class="hermanos"></div>
+          <span id="texto" class="nieto hijo">span tres</span>
+    </div>
+    <a href="../index.html"><h2>volver atras</h2></a>
+</body>       
+</html>   

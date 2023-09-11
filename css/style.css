@@ -1,0 +1,62 @@
+/*inportacion por tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'golos text';
+    font-weight: 900;
+
+}
+/*selector de etiqueta*/
+h2{
+    color:red;
+}
+/*selector de id*/
+#site_text{
+    background-color: black;
+}
+/*selector de clases*/
+.subtitles{
+    font-family: 'golos text';
+}
+/*selector por atributos*/
+[disabled]{
+background-color: darkmagenta;
+}
+/* selector por id - boton enviar*/
+#btn_send{
+    margin: 20px;
+    padding: 50px;
+}
+/*selector por pseudoclases*/
+#btn_send:hover{
+    background-color: aquamarine;
+    color: orange;
+    font-size: 20px;
+}
+#papa{
+    margin: 50px;
+    border: 2px solid red;
+    border-radius:  10px;
+}
+.hermanos{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px;
+}
+#nh_uno{
+    color: blue;
+}
+/*selector decendiente hijo*/
+#papa > .hermanos > #nh_uno{
+    color: orange;
+}
+/*selector decendiente*/
+#papa.nieto{
+    color: red;
+}
