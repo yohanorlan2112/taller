@@ -33,9 +33,12 @@ background-color: darkmagenta;
 }
 /*selector por pseudoclases*/
 #btn_send:hover{
-    background-color: aquamarine;
-    color: orange;
+    background-color: blanchedalmond;
+    color: purple;
     font-size: 20px;
+    box-shadow: 0px 10px 10px rebeccapurple;
+    transition: ease-in 0.5;
+    border-radius: 1px solid black ;
 }
 #papa{
     margin: 50px;
@@ -59,4 +62,47 @@ background-color: darkmagenta;
 /*selector decendiente*/
 #papa.nieto{
     color: red;
+}
+#title_box{
+    color: blue;
+    font-family: 'golos text', sans-serif;
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border: 5px double  #000;
+    border-radius : 10px;
+    box-shadow: 0px 0px 10px 5px blue;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    font-size: 21px;
+}
+#box_father{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    background-image: url(https://previews.123rf.com/images/aprillrain/aprillrain2212/aprillrain221200638/196354278-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustraci%C3%B3n-de-alta-calidad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+@media (min-width:"800px")and( max-width:"1200px"){
+    body{
+        background-color: red;
+    }
+    h1{
+        text-align: center;
+    }
+}
+/*media querys de 799 para abajp*/
+@media ( max-width : 799px){
+    body{
+        background-image: url(https://previews.123rf.com/images/aprillrain/aprillrain2212/aprillrain221200638/196354278-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustraci%C3%B3n-de-alta-calidad.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
