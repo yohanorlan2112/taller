@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: beige;
+        }
+        h1{
+            color: aqua;
+            background-color: antiquewhite;
+            text-align: center;
+            box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.);
+        }
+        #father{
+            height:  100px;
+            display: flex;
+            justify-content: space-around;
+            align-items:center ;
+            flex-direction: row-reverse;
+           /*  display: grid; */
+            /* place-items: center; */
+            flex-wrap: wrap;
+        }
+        #son, #son_one, #son_two , #son_tre{
+            width: 200px;
+            height: 200px;
+            background-color: azure;
+            transform: translate(-5px,-10px); 
+            border-radius: 15px;
+        }
+        #son_one{
+            background-color: blue;
+            transform:skew(-15deg)
+        }
+        #son_two{
+            background-color: red;
+            transform: scale(1.2);
+        }
+        #son_tre{
+            background-color: yellow;
+            transform: rotate(45deg);
+        }
+        #son:hover{
+        transform: scale(1.2);
+        transition: all ease-in-out 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- #text_container>h1{class flexbox}-->
+        <div id="content_conteiner>">
+            <h1>class flexbox</h1>
+            <div id="father">
+                <div id="son"></div>
+                <div id="son_one"></div>
+                <div id="son_two"></div>
+                <div id="son_tre"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
